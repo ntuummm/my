@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ntuummm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1 class="title">Hi, I'm <span class="highlight">ntuummm</span></h1>
+      <p class="typed-wrapper">Simplicity and elegance.</p>
+      <a href="https://github.com/ntuummm" target="_blank" class="button">Visit My GitHub</a>
+    </header>
+
+    <!-- WordPress Plugins Section -->
+    <section id="plugins">
+      <h2 class="section-title">My WordPress Plugins</h2>
+      <div class="plugin-cards">
+        <!-- Plugin Card 1 -->
+        <div class="plugin-card">
+          <div class="ribbon">1</div>
+          <h3>IMGMarkFactory</h3>
+          <p>Add professional watermarks to your images with real-time preview and drag-and-drop positioning. Support for both text and image watermarks.</p>
+          <div class="progress-bar">
+            <div class="progress fixed-100"></div>
+          </div>
+        </div>
+
+        <!-- Plugin Card 2 -->
+        <div class="plugin-card">
+          <div class="ribbon">2</div>
+          <h3>Comming soon...</h3>
+          <p>Stay tuned!</p>
+          <div class="progress-bar">
+            <div class="progress fixed-0"></div>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <!-- Left Column: About -->
+        <div class="footer-about">
+          <h3>About Me</h3>
+          <p>Hi, I'm ntuumm! 👋🐶💻 I'm a developer who loves dogs and coding! 🐕✨</p>
+        </div>
+        <!-- Right Column: Links -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="https://github.com/ntuummm" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 ntuummm. Built with love and passion.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Dynamic text color adjustment based on background
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          document.body.style.color = entry.isIntersecting ? "#000" : "#fff";
+        },
+        { threshold: 0.5 }
+      );
+
+      observer.observe(document.body);
+    </script>
+  </body>
+</html>

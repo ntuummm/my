@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #fff;
+  background: linear-gradient(45deg, #fcd5ce, #f6bd60, #d6e2e9, #c9cba3);
+  background-size: 400% 400%;
+  animation: gradient-animation 10s linear infinite;
+}
+
+/* Gradient Animation */
+@keyframes gradient-animation {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.title {
+  font-size: 3em;
+  margin: 0;
+}
+
+.typed-wrapper {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.button {
+  background: #fcd5ce;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #fff;
+  color: #fcd5ce;
+}
+
+/* Plugin Section */
+#plugins {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.plugin-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.plugin-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.plugin-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.ribbon {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  background: #f6bd60;
+  padding: 5px 15px;
+  font-weight: bold;
+  color: #333;
+  border-radius: 5px;
+  transform: rotate(-15deg);
+}
+
+.plugin-card h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.plugin-card p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+  margin-top: 15px;
+}
+
+.progress-bar .progress {
+  position: absolute;
+  height: 100%;
+  background: #0188ff; /* Blue progress color */
+  transition: width 0.5s ease; /* Smooth animation */
+}
+
+/* Fixed Progress Levels */
+.progress.fixed-0 {
+  width: 0%;
+}
+.progress.fixed-25 {
+  width: 25%;
+}
+.progress.fixed-50 {
+  width: 50%;
+}
+.progress.fixed-70 {
+  width: 70%;
+}
+.progress.fixed-100 {
+  width: 100%;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-about,
+.footer-links {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-about h3,
+.footer-links h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #fcd5ce;
+}
+
+.footer-about p {
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #f6bd60;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 0.9em;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
