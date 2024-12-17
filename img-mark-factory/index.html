@@ -229,28 +229,32 @@
           <h2 class="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
           <div class="bg-white shadow-md rounded-md">
             <div class="accordion">
+              <!-- Do you store my uploaded files? -->
               <div class="border-b">
                 <button class="w-full text-left px-4 py-3 font-semibold hover:bg-gray-50 focus:outline-none" onclick="toggleAccordion(this)">
                   <span>Do you store my uploaded files?</span>
                 </button>
                 <div class="hidden px-4 py-3 text-gray-700">
                   <p>
-                    No, your uploads are processed temporarily and immediately deleted after processing is complete. We follow strict no-storage
-                    policies to ensure your data remains private.
+                    No, your uploads are processed temporarily and immediately deleted after processing is complete. We follow strict no-storage policies
+                    to ensure your data remains private. The file size is logged **only** for monitoring traffic and optimizing server capacity. No file content
+                    or metadata (like file name) is stored.
                   </p>
                 </div>
               </div>
+              <!-- How long is my data retained? -->
               <div class="border-b">
                 <button class="w-full text-left px-4 py-3 font-semibold hover:bg-gray-50 focus:outline-none" onclick="toggleAccordion(this)">
                   <span>How long is my data retained?</span>
                 </button>
                 <div class="hidden px-4 py-3 text-gray-700">
                   <p>
-                    We do not retain your data. It is processed temporarily on our servers and discarded as soon as the process is finished. This
-                    ensures complete confidentiality and security.
+                    We do not retain your data. It is processed temporarily on our servers and discarded as soon as the process is finished. This ensures
+                    complete confidentiality and security.
                   </p>
                 </div>
               </div>
+              <!-- How do you ensure data security? -->
               <div class="border-b">
                 <button class="w-full text-left px-4 py-3 font-semibold hover:bg-gray-50 focus:outline-none" onclick="toggleAccordion(this)">
                   <span>How do you ensure data security?</span>
